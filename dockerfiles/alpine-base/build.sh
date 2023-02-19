@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-docker image build -t alpine-base:test .
+. .env
+
+docker image build -t ${NAME}:${TAG} .
 

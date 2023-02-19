@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-IMAGE="alpine-base:test"
+. .env
 
-docker run --name alpine-base --rm -it \
-  ${IMAGE}
+docker run --name ${NAME} --rm -it \
+    ${NAME}:${TAG}
